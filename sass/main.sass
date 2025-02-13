@@ -1,21 +1,27 @@
 @use 'base' as *
 
 .container
-    width: min(90%, 112rem)
+    width: min(85%, 112rem)
     margin: 0 auto
 
 body
-    background-color: $blue-900
+    background-color: transparent
 
-header
+.header
     display: flex
     justify-content: space-between
     align-items: center
+    padding: 1.6rem 0
     &__logo
         width: 100%
-        background-color: $pink-300
         height: auto
         img
-            height: 80rem
+            width: 8rem
     &__button
-        @include pokemon
+        @include button
+
+.hero
+    margin: 6.4rem 0
+    &__info
+        h1
+            @include text_preset_1

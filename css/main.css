@@ -10,36 +10,50 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: "Plus Jakarta Sans", serif;
   font-size: 1.6rem;
 }
 
 .container {
-  width: min(90%, 112rem);
+  width: min(85%, 112rem);
   margin: 0 auto;
 }
 
 body {
-  background-color: #13183F;
+  background-color: transparent;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.6rem 0;
 }
-header__logo {
+.header__logo {
   width: 100%;
-  background-color: #FFA7C3;
   height: auto;
 }
-header__logo img {
-  height: 80rem;
+.header__logo img {
+  width: 8rem;
 }
-header__button {
+.header__button {
   display: block;
   padding: 1.6rem 3.2rem;
   background-color: #13183F;
   font-weight: 800;
   color: #FFFFFF;
+  border: none;
+  border-radius: 8rem;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  line-height: 150%;
+}
+
+.hero {
+  margin: 6.4rem 0;
+}
+.hero__info h1 {
+  font-weight: 800;
+  font-size: 5.6rem;
+  line-height: 120%;
 }/*# sourceMappingURL=main.css.map */

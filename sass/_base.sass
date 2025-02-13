@@ -21,13 +21,27 @@ html
     font-size: 10px
 
 body
-    font-family: var(--font-family)
+    font-family: $font-family
     font-size: 1.6rem
 
-@mixin pokemon
+@mixin button
     display: block
     padding: 1.6rem 3.2rem
     background-color: $blue-900
     font-weight: $bold
     color: $white
+    border: none
+    border-radius: 8rem
+    font-size: 1.8rem
+    white-space: nowrap
+    line-height: 150%
 
+@mixin text_default($weight: $medium, $size: 1.8rem, $line: 150%)
+    font-weight: $weight
+    font-size: $size
+    line-height: $line
+
+@mixin text_preset_1
+    @include text_default($weight: $bold, $size: 5.6rem, $line: 120%)
+    
+    
