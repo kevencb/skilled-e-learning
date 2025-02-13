@@ -4,24 +4,93 @@
     width: min(85%, 112rem)
     margin: 0 auto
 
-body
-    background-color: transparent
-
 .header
     display: flex
     justify-content: space-between
     align-items: center
     padding: 1.6rem 0
+    background-color: aqua
+    @media (width >= 768px)
+        padding-bottom: 0
     &__logo
-        width: 100%
-        height: auto
         img
             width: 8rem
     &__button
         @include button
+        background-color: $blue-900
 
 .hero
-    margin: 6.4rem 0
+    margin: 6.4rem auto
+    @media (width >= 768px)
+        margin-top: 0
+        display: grid
+        grid-template-columns: 1fr 1fr
+        align-items: center
+        background-color: red
     &__info
         h1
             @include text_preset_1
+            margin-bottom: 2.4rem
+        p
+            @include text_default
+            margin-bottom: 4rem
+        button
+            @include button
+            background: $gradient-pink
+            @media (width >= 768px)
+    &__image
+        width: 100%
+        margin: 8.8rem auto
+        @media (width >= 768px)
+            overflow: visible
+        picture
+            img
+                width: 100%
+                transform: scale(130%)
+                display: block
+                @media (width >= 768px)
+                    margin-top: -5rem
+                    margin-left: 12rem
+                    transform: scale(150%)
+
+main
+    display: grid
+    grid-template-columns: 1fr
+    gap: 6.2rem
+    .card__featured
+        background: $gradient-pink
+        padding: 3.2rem
+        border-radius: 1.5rem
+        color: $white
+    .card__item
+        box-shadow: 0 2.5rem 50px rgba($color: #06168D, $alpha: 0.1)
+        padding: 6.4rem 3.2rem 4rem
+        border-radius: 1.5rem
+        position: relative
+        &-icon
+            margin-top: -9rem
+            position: absolute
+        &-info
+            display: flex
+            flex-direction: column
+            gap: 2.4rem
+            h2
+                @include text_preset_4
+            p
+                @include text_preset_6
+            a
+                @include text_preset_7
+                color: $pink-600
+                text-decoration: none
+
+.footer
+    background-color: $blue-900
+    margin-top: 8rem
+    padding: 2.4rem 0
+    div
+        display: flex
+        justify-content: space-between
+        align-items: center
+        button
+            @include button
+            background: $gradient-purple

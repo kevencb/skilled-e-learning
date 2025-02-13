@@ -9,6 +9,7 @@ $white: #FFFFFF
 $gradient-pink: linear-gradient( #F02AA6, #FF6F48)
 $gradient-purple: linear-gradient( #4851FF, #F02AA6)
 $bold: 800
+$semi: 600
 $medium: 500
 $font-family: "Plus Jakarta Sans", serif
 
@@ -23,11 +24,11 @@ html
 body
     font-family: $font-family
     font-size: 1.6rem
+    overflow-x: hidden
 
 @mixin button
     display: block
     padding: 1.6rem 3.2rem
-    background-color: $blue-900
     font-weight: $bold
     color: $white
     border: none
@@ -36,12 +37,21 @@ body
     white-space: nowrap
     line-height: 150%
 
-@mixin text_default($weight: $medium, $size: 1.8rem, $line: 150%)
+@mixin text_default($weight: $medium, $size: 1.8rem, $line: 150%, $color: $grey)
     font-weight: $weight
     font-size: $size
     line-height: $line
+    color: $color
 
 @mixin text_preset_1
-    @include text_default($weight: $bold, $size: 5.6rem, $line: 120%)
-    
+    @include text_default($weight: $bold, $size: 4rem, $line: 120%, $color: $blue-900)
+
+@mixin text_preset_4
+    @include text_default($weight: $bold, $size: 2rem, $line: 120%, $color: $blue-900)
+
+@mixin text_preset_6
+    @include text_default($weight: $semi, $size: 1.6rem, $line: 150%, $color: $grey)
+
+@mixin text_preset_7
+    @include text_default($weight: $semi, $size: 1.8rem, $line: 150%, $color: $grey)
     

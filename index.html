@@ -18,39 +18,82 @@
     <button class="header__button" type="button" aria-label="Get Started">Get Started</button>
   </header>
 
-  <section class="hero">
+  <section class="hero container">
     <div class="hero__info">
       <h1>Maximize skill, minimize budget</h1>
       <p>
         Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you
         want.
       </p>
+      <button class="hero__info-button" type="button" aria-label="Get Started">Get Started</button>
     </div>
-    <picture class="hero__image">
-      <source media="(min-width: 1140px )" srcset="./assets/image-hero-desktop.png">
-      <source media="(min-width: 768px )" srcset="./assets/image-hero-tablet.png">
-      <source media="(min-width: 375px )" srcset="./assets/image-hero-mobile.png">
-      <img src="./assets/image-hero-mobile.png" alt="Hero banner">
-    </picture>
+    <div class="hero__image">
+      <picture>
+        <source media="(min-width: 1140px )" srcset="./assets/image-hero-desktop.png">
+        <source media="(min-width: 768px )" srcset="./assets/image-hero-tablet.png">
+        <source media="(min-width: 375px )" srcset="./assets/image-hero-mobile.png">
+        <img src="./assets/image-hero-mobile.png" alt="Hero banner">
+      </picture>
+    </div>
   </section>
 
-  <main>
+  <main class="container">
     <article class="card__featured">
       <h2>Check out our most popular courses!</h2>
     </article>
     <article class="card__item">
       <img src="./assets/icon-animation.svg" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
-      <h2>Animation</h2>
-      <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-      <a href="#" aria-label="Get Started">Get Started</a>
+      <div class="card__item-info">
+        <h2>Animation</h2>
+        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+        <a href="#" aria-label="Get Started">Get Started</a>
+      </div>
+    </article>
+
+    <article class="card__item">
+      <img src="./assets/icon-animation.svg" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
+      <div class="card__item-info">
+        <h2>Animation</h2>
+        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+        <a href="#" aria-label="Get Started">Get Started</a>
+      </div>
+    </article>
+
+    <article class="card__item">
+      <img src="./assets/icon-animation.svg" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
+      <div class="card__item-info">
+        <h2>Animation</h2>
+        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+        <a href="#" aria-label="Get Started">Get Started</a>
+      </div>
+    </article>
+
+    <article class="card__item">
+      <img src="./assets/icon-animation.svg" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
+      <div class="card__item-info">
+        <h2>Animation</h2>
+        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+        <a href="#" aria-label="Get Started">Get Started</a>
+      </div>
+    </article>
+
+    <article class="card__item">
+      <img src="./assets/icon-animation.svg" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
+      <div class="card__item-info">
+        <h2>Animation</h2>
+        <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+        <a href="#" aria-label="Get Started">Get Started</a>
+      </div>
     </article>
   </main>
 
   <footer class="footer">
-    <a href="#">
-      <img src="./assets/logo-light.svg" alt="Company logo">
-    </a>
-    <button type="button" aria-label="Get Started">Get Started</button>
+    <div class="container">
+      <a href="#">
+        <img src="./assets/logo-light.svg" alt="Company logo">
+      </a>
+      <button type="button" aria-label="Get Started">Get Started</button>
+    </div>
   </footer>
 
   <!-- Animation
