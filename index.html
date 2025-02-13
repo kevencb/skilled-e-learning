@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
   <title>Frontend Mentor | Skilled e-learning landing page</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
 
-  Get Started
+  <header class="header">
+    <a href="#" aria-label="Company logo">
+      <img src="./assets/logo-dark.svg" alt="Company logo" class="logo">
+    </a>
+    <button type="button" aria-label="Get Started">Get Started</button>
+  </header>
 
-  Maximize skill, minimize budget
+  <section class="hero">
+    <div class="hero__info-left">
+      <h1>Maximize skill, minimize budget</h1>
+      <p>
+        Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you
+        want.
+      </p>
+    </div>
+    <picture class="hero__image">
+      <source media="(min-width: 1140px )" srcset="./assets/image-hero-desktop.png">
+      <source media="(min-width: 768px )" srcset="./assets/image-hero-tablet.png">
+      <source media="(min-width: 375px )" srcset="./assets/image-hero-mobile.png">
+      <img src="./assets/image-hero-mobile.png" alt="Hero banner">
+    </picture>
+  </section>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+  <main>
+    <article class="card__featured">
+      <h2>Check out our most popular courses!</h2>
+    </article>
+    <article class="card__item">
+      <img src="./assets/icon-animation.svg" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
+      <h2>Animation</h2>
+      <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+      <a href="#" aria-label="Get Started">Get Started</a>
+    </article>
+  </main>
 
-  Get Started
+  <footer class="footer">
+    <a href="#">
+      <img src="./assets/logo-light.svg" alt="Company logo">
+    </a>
+    <button type="button" aria-label="Get Started">Get Started</button>
+  </footer>
 
-  Check out our most popular courses!
-
-  Animation
+  <!-- Animation
   Learn the latest animation techniques to create stunning motion 
   design and captivate your audience.
   Get Started
@@ -46,7 +78,7 @@
   without outside investment.
   Get Started
 
-  Get Started
+  Get Started -->
 
 </body>
 </html>
