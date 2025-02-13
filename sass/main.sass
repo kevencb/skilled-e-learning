@@ -1,0 +1,21 @@
+@use 'base' as *
+
+.container
+    width: min(90%, 112rem)
+    margin: 0 auto
+
+body
+    background-color: $blue-900
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__logo
+        width: 100%
+        background-color: $pink-300
+        height: auto
+        img
+            height: 80rem
+    &__button
+        @include pokemon
