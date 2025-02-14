@@ -38,8 +38,8 @@
             @include button
             background: $gradient-pink
         @media (width >= 768px)
-            padding: 4.2rem 0
     &__image
+        padding: 4.2rem 0 0
         width: 100%
         margin: 8.8rem auto
         @media (width >= 768px)
@@ -51,8 +51,12 @@
                 display: block
                 @media (width >= 768px)
                     transform: scale(220%)
-                    margin-top: -13rem
+                    margin-top: -16rem
                     margin-left: 13rem
+                @media (width >= 1024px)
+                    transform: scale(120%)
+                    margin-top: -30rem
+                    margin-left: calc( 100% - 60% )
 
 main
     display: grid
@@ -60,6 +64,9 @@ main
     gap: 6.2rem
     @media (width >= 768px)
         grid-template-columns: 1fr 1fr
+        column-gap: 2.4rem
+    @media (width >= 1024px)
+        grid-template-columns: 1fr 1fr 1fr
         column-gap: 2.4rem
     .card__featured
         background: $gradient-pink

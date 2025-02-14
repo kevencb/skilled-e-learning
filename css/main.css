@@ -97,12 +97,8 @@ body {
     padding: 1.05rem 2.5rem;
   }
 }
-@media (width >= 768px) {
-  .hero__info {
-    padding: 4.2rem 0;
-  }
-}
 .hero__image {
+  padding: 4.2rem 0 0;
   width: 100%;
   margin: 8.8rem auto;
 }
@@ -119,8 +115,15 @@ body {
 @media (width >= 768px) {
   .hero__image picture img {
     transform: scale(220%);
-    margin-top: -13rem;
+    margin-top: -16rem;
     margin-left: 13rem;
+  }
+}
+@media (width >= 1024px) {
+  .hero__image picture img {
+    transform: scale(120%);
+    margin-top: -30rem;
+    margin-left: 40%;
   }
 }
 
@@ -132,6 +135,13 @@ main {
 @media (width >= 768px) {
   main {
     grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2.4rem;
+         column-gap: 2.4rem;
+  }
+}
+@media (width >= 1024px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
     -moz-column-gap: 2.4rem;
          column-gap: 2.4rem;
   }
