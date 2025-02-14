@@ -20,11 +20,12 @@ $font-family: "Plus Jakarta Sans", serif
 
 html
     font-size: 10px
+    overflow-x: hidden !important
 
 body
     font-family: $font-family
     font-size: 1.6rem
-    overflow-x: hidden
+    overflow-x: hidden !important
 
 @mixin button
     display: block
@@ -36,6 +37,8 @@ body
     font-size: 1.8rem
     white-space: nowrap
     line-height: 150%
+    @media (width >= 768px)
+        padding: 1.05rem 2.5rem
 
 @mixin text_default($weight: $medium, $size: 1.8rem, $line: 150%, $color: $grey)
     font-weight: $weight

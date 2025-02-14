@@ -9,7 +9,6 @@
     justify-content: space-between
     align-items: center
     padding: 1.6rem 0
-    background-color: aqua
     @media (width >= 768px)
         padding-bottom: 0
     &__logo
@@ -24,9 +23,10 @@
     @media (width >= 768px)
         margin-top: 0
         display: grid
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 32.8rem 1fr
         align-items: center
-        background-color: red
+        padding: 6.4rem 0
+        gap: 2.4rem
     &__info
         h1
             @include text_preset_1
@@ -37,7 +37,8 @@
         button
             @include button
             background: $gradient-pink
-            @media (width >= 768px)
+        @media (width >= 768px)
+            padding: 4.2rem 0
     &__image
         width: 100%
         margin: 8.8rem auto
@@ -49,14 +50,17 @@
                 transform: scale(130%)
                 display: block
                 @media (width >= 768px)
-                    margin-top: -5rem
-                    margin-left: 12rem
-                    transform: scale(150%)
+                    transform: scale(220%)
+                    margin-top: -13rem
+                    margin-left: 13rem
 
 main
     display: grid
     grid-template-columns: 1fr
     gap: 6.2rem
+    @media (width >= 768px)
+        grid-template-columns: 1fr 1fr
+        column-gap: 2.4rem
     .card__featured
         background: $gradient-pink
         padding: 3.2rem
@@ -87,6 +91,8 @@ main
     background-color: $blue-900
     margin-top: 8rem
     padding: 2.4rem 0
+    @media (width >= 768px)
+        margin-top: 14rem
     div
         display: flex
         justify-content: space-between

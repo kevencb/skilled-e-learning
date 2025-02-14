@@ -7,12 +7,13 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: "Plus Jakarta Sans", serif;
   font-size: 1.6rem;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .container {
@@ -25,7 +26,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.6rem 0;
-  background-color: aqua;
 }
 @media (width >= 768px) {
   .header {
@@ -47,6 +47,11 @@ body {
   line-height: 150%;
   background-color: #13183F;
 }
+@media (width >= 768px) {
+  .header__button {
+    padding: 1.05rem 2.5rem;
+  }
+}
 
 .hero {
   margin: 6.4rem auto;
@@ -55,9 +60,10 @@ body {
   .hero {
     margin-top: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 32.8rem 1fr;
     align-items: center;
-    background-color: red;
+    padding: 6.4rem 0;
+    gap: 2.4rem;
   }
 }
 .hero__info h1 {
@@ -86,6 +92,16 @@ body {
   line-height: 150%;
   background: linear-gradient(#F02AA6, #FF6F48);
 }
+@media (width >= 768px) {
+  .hero__info button {
+    padding: 1.05rem 2.5rem;
+  }
+}
+@media (width >= 768px) {
+  .hero__info {
+    padding: 4.2rem 0;
+  }
+}
 .hero__image {
   width: 100%;
   margin: 8.8rem auto;
@@ -102,9 +118,9 @@ body {
 }
 @media (width >= 768px) {
   .hero__image picture img {
-    margin-top: -5rem;
-    margin-left: 12rem;
-    transform: scale(150%);
+    transform: scale(220%);
+    margin-top: -13rem;
+    margin-left: 13rem;
   }
 }
 
@@ -112,6 +128,13 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 6.2rem;
+}
+@media (width >= 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 2.4rem;
+         column-gap: 2.4rem;
+  }
 }
 main .card__featured {
   background: linear-gradient(#F02AA6, #FF6F48);
@@ -160,6 +183,11 @@ main .card__item-info a {
   margin-top: 8rem;
   padding: 2.4rem 0;
 }
+@media (width >= 768px) {
+  .footer {
+    margin-top: 14rem;
+  }
+}
 .footer div {
   display: flex;
   justify-content: space-between;
@@ -176,4 +204,9 @@ main .card__item-info a {
   white-space: nowrap;
   line-height: 150%;
   background: linear-gradient(#4851FF, #F02AA6);
+}
+@media (width >= 768px) {
+  .footer div button {
+    padding: 1.05rem 2.5rem;
+  }
 }/*# sourceMappingURL=main.css.map */
