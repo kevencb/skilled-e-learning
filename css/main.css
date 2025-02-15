@@ -149,80 +149,80 @@ body {
   }
 }
 
-main {
+main div {
   display: grid;
   grid-template-columns: 1fr;
   gap: 6.2rem;
 }
 @media (width >= 768px) {
-  main {
+  main div {
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 2.4rem;
          column-gap: 2.4rem;
   }
 }
 @media (width >= 1024px) {
-  main {
+  main div {
     grid-template-columns: 1fr 1fr 1fr;
     -moz-column-gap: 2.4rem;
          column-gap: 2.4rem;
   }
 }
-main .card__featured {
+main div .card__featured {
   background: linear-gradient(#F02AA6, #FF6F48);
   padding: 3.2rem;
   border-radius: 1.5rem;
   color: #FFFFFF;
 }
 @media (width >= 1024px) {
-  main .card__featured {
+  main div .card__featured {
     padding: 6.4rem 3.2rem;
   }
-  main .card__featured h2 {
+  main div .card__featured h2 {
     font-size: 3.2rem;
   }
 }
-main .card__item {
+main div .card__item {
   box-shadow: 0 2.5rem 50px rgba(6, 22, 141, 0.1);
   padding: 6.4rem 3.2rem 4rem;
   border-radius: 1.5rem;
   position: relative;
 }
-main .card__item-icon {
+main div .card__item-icon {
   margin-top: -9rem;
   position: absolute;
 }
-main .card__item-info {
+main div .card__item-info {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
-main .card__item-info h2 {
+main div .card__item-info h2 {
   font-weight: 800;
   font-size: 2rem;
   line-height: 120%;
   color: #13183F;
 }
 @media (width >= 1024px) {
-  main .card__item-info h2 {
+  main div .card__item-info h2 {
     font-size: 2.4rem;
   }
 }
-main .card__item-info p {
+main div .card__item-info p {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 150%;
   color: #83869A;
 }
 @media (min-width: 768px) {
-  main .card__item-info p {
+  main div .card__item-info p {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 150%;
     color: #83869A;
   }
 }
-main .card__item-info a {
+main div .card__item-info a {
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 150%;
@@ -231,7 +231,7 @@ main .card__item-info a {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  main .card__item-info a {
+  main div .card__item-info a {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 150%;
@@ -239,7 +239,7 @@ main .card__item-info a {
   }
 }
 @media (width >= 768px) {
-  main .card__item-info a {
+  main div .card__item-info a {
     color: #F74780;
   }
 }
