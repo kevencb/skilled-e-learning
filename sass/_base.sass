@@ -37,6 +37,7 @@ body
     font-size: 1.8rem
     white-space: nowrap
     line-height: 150%
+    cursor: pointer
     @media (width >= 768px)
         padding: 1.05rem 2.5rem
 
@@ -48,13 +49,23 @@ body
 
 @mixin text_preset_1
     @include text_default($weight: $bold, $size: 4rem, $line: 120%, $color: $blue-900)
+    @media (min-width: 768px)
+        @include text_default($weight: $bold, $size: 5.6rem, $line: 120%, $color: $blue-900)
 
 @mixin text_preset_4
     @include text_default($weight: $bold, $size: 2rem, $line: 120%, $color: $blue-900)
 
+@mixin text_preset_5
+   @include text_default($weight: $semi, $size: 1.6rem, $line: 150%, $color: $grey)
+   @media (min-width: 768px)
+        @include text_default($weight: $semi, $size: 1.8rem, $line: 150%, $color: $grey)
+
 @mixin text_preset_6
     @include text_default($weight: $semi, $size: 1.6rem, $line: 150%, $color: $grey)
 
+
 @mixin text_preset_7
     @include text_default($weight: $semi, $size: 1.8rem, $line: 150%, $color: $grey)
+    @media (min-width: 768px)
+        @include text_default($weight: $semi, $size: 1.8rem, $line: 150%, $color: $grey)
     

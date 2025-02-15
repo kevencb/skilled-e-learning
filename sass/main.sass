@@ -9,11 +9,15 @@
     justify-content: space-between
     align-items: center
     padding: 1.6rem 0
+    z-index: 99999
+    position: relative
     @media (width >= 768px)
         padding-bottom: 0
     &__logo
         img
             width: 8rem
+            @media (width >= 1024px)
+                width: 11rem
     &__button
         @include button
         background-color: $blue-900
@@ -27,6 +31,8 @@
         align-items: center
         padding: 6.4rem 0
         gap: 2.4rem
+    @media (width >= 1024px)
+        grid-template-columns: 46rem 1fr
     &__info
         h1
             @include text_preset_1
@@ -37,7 +43,6 @@
         button
             @include button
             background: $gradient-pink
-        @media (width >= 768px)
     &__image
         padding: 4.2rem 0 0
         width: 100%
@@ -54,9 +59,9 @@
                     margin-top: -16rem
                     margin-left: 13rem
                 @media (width >= 1024px)
-                    transform: scale(120%)
+                    transform: scale(160%)
                     margin-top: -30rem
-                    margin-left: calc( 100% - 60% )
+                    margin-left: calc( 100% - 50% )
 
 main
     display: grid
@@ -73,6 +78,10 @@ main
         padding: 3.2rem
         border-radius: 1.5rem
         color: $white
+        @media (width >= 1024px)
+            padding: 6.4rem 3.2rem
+            h2
+                font-size: 3.2rem
     .card__item
         box-shadow: 0 2.5rem 50px rgba($color: #06168D, $alpha: 0.1)
         padding: 6.4rem 3.2rem 4rem
@@ -87,12 +96,16 @@ main
             gap: 2.4rem
             h2
                 @include text_preset_4
+                @media (width >= 1024px)
+                    font-size: 2.4rem
             p
-                @include text_preset_6
+                @include text_preset_5
             a
                 @include text_preset_7
                 color: $pink-600
                 text-decoration: none
+                @media (width >= 768px)
+                    color: $pink-600
 
 .footer
     background-color: $blue-900
@@ -104,6 +117,11 @@ main
         display: flex
         justify-content: space-between
         align-items: center
+        a
+            img
+                width: 8rem
+                @media (width >= 1024px)
+                    width: 11rem
         button
             @include button
             background: $gradient-purple
