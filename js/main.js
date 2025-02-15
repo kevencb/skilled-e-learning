@@ -25,7 +25,7 @@ function displayItems(items){
         else{
             article.classList.add("card__item")
             article.innerHTML = `
-                <img src="${item.icon}" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
+                <img src="${item.icon}" class="card__item-icon" aria-label="Animation icon" alt="${item.title}"/>
                 <div class="card__item-info">
                     <h2>${item.title}</h2>
                     <p>${item.description}</p>

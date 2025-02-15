@@ -7,13 +7,13 @@
             "cta": ""
         },
         {
-            "icon": "/assets/icon-animation.svg",
+            "icon": "./assets/icon-animation.svg",
             "title": "Animation",
             "description": "Learn the latest animation techniques to create stunning motion design and captivate your audience.",
             "cta": "Get Started"
         },
         {
-            "icon": "/assets/icon-design.svg",
+            "icon": "assets/icon-design.svg",
             "title": "Design",
             "description": "Create beautiful, usable interfaces to help shape the future of how the web looks.",
             "cta": "Get Started"
