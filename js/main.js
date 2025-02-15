@@ -2,7 +2,7 @@ const main = document.querySelector('main')
 
 async function loadItems(){
     try {
-        const res = await fetch('data.json')
+        const res = await fetch('https://raw.githubusercontent.com/kevencb/skilled-e-learning/refs/heads/main/data.json')
         const items = await res.json()
         console.table(items.sections)
         displayItems(items.sections)
