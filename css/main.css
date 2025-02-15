@@ -195,6 +195,8 @@ main div .card__item-icon {
 main div .card__item-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   gap: 2.4rem;
 }
 main div .card__item-info h2 {
@@ -261,6 +263,7 @@ main div .card__item-info a {
 }
 .footer div a img {
   width: 8rem;
+  display: block;
 }
 @media (width >= 1024px) {
   .footer div a img {

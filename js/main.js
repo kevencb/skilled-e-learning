@@ -28,8 +28,8 @@ function displayItems(items){
                 <img src="${item.icon}" class="card__item-icon" aria-label="Animation icon" alt="Animation icon"/>
                 <div class="card__item-info">
                     <h2>${item.title}</h2>
-                    <p>Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
-                    <a href="#" aria-label="Get Started">Get Started</a>
+                    <p>${item.description}</p>
+                    <a href="#" aria-label="Get Started">${item.cta}</a>
                 </div>
             `
         }
