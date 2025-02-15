@@ -7,7 +7,7 @@
             "cta": ""
         },
         {
-            "icon": "./assets/icon-animation.svg",
+            "icon": "assets/icon-animation.svg",
             "title": "Animation",
             "description": "Learn the latest animation techniques to create stunning motion design and captivate your audience.",
             "cta": "Get Started"
@@ -19,19 +19,19 @@
             "cta": "Get Started"
         },
         {
-            "icon": "/assets/icon-photography.svg",
+            "icon": "assets/icon-photography.svg",
             "title": "Photography",
             "description": "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.",
             "cta": "Get Started"
         },
         {
-            "icon": "/assets/icon-crypto.svg",
+            "icon": "assets/icon-crypto.svg",
             "title": "Crypto",
             "description": "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.",
             "cta": "Get Started"
         },
         {
-            "icon": "/assets/icon-business.svg",
+            "icon": "assets/icon-business.svg",
             "title": "Business",
             "description": "A step-by-step playbook to help you start, scale, and sustain your business without outside investment.",
             "cta": "Get Started"
